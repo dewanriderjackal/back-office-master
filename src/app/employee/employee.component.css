@@ -1,0 +1,145 @@
+/* CSS Kustom untuk tema biru muda */
+:root {
+  --primary-color: #1ebbeb;
+  --secondary-color: #f7f7f7;
+  --dark-color: #5988b7;
+  --hover-color: #d1ecf1;
+}
+
+body {
+  background-color: var(--secondary-color);
+  font-family: 'Arial', sans-serif;
+}
+
+.container-fluid {
+  background-color: var(--secondary-color);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.table {
+  background-color: white;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+
+thead.thead-dark {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: var(--hover-color);
+}
+
+.table-hover tbody tr:hover {
+  background-color: var(--hover-color);
+}
+
+.btn-info {
+  /* background-color: var(--primary-color); */
+  border: none;
+}
+
+/* .btn-outline-secondary {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+} */
+
+.btn-outline-secondary:hover {
+  background-color: var(--primary-color);
+  border: lightblue 1px solid;
+  color: lightblue;
+}
+
+.btn-secondary {
+  background-color: white;
+  border: gray 1px solid;
+  color: gray;
+  /* border: none; */
+}
+
+.btn-secondary:hover {
+  /* background-color: darken(var(--dark-color), 10%); */
+}
+
+.btn-group button {
+  margin-right: 5px;
+}
+
+.btn-group button:last-child {
+  margin-right: 0;
+}
+
+.btn-danger, .btn-warning {
+  color: white;
+}
+
+.btn-danger:hover, .btn-warning:hover, .btn-info:hover  {
+  opacity: 0.8;
+  transform: scale(1.1);
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+input.form-control {
+  border-radius: 0.25rem;
+}
+
+.table-responsive {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.popover {
+  max-width: 200px;
+}
+
+/* Sidebar CSS */
+#sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  padding: 48px 0 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: gray; /* Warna biru muda */
+}
+
+.sidebar {
+  width: 280px;
+}
+
+.sidebar .nav-link {
+  padding: 12px 20px;
+  color: gray; /* Warna teks */
+  transition: all 0.3s ease; /* Efek transisi */
+}
+
+.sidebar .nav-link:hover {
+  background-color: #0dcaf0; /* Warna biru muda saat dihover */
+  color: white; /* Warna teks biru saat dihover */
+}
+
+.sidebar-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  /* text-align: center; */
+}
+
+/* Icon CSS */
+.nav-link i {
+  width: 20px;
+  text-align: center;
+}
+
+/* Main content adjustments to accommodate sidebar */
+.main-content {
+  margin-left: 280px;
+  padding-top: 60px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
